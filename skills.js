@@ -11,6 +11,3 @@ function calculateNumbers(params) {
         return "Error";
     }
 }
-    function calculateNumbers
-    }
-}

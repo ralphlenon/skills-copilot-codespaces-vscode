@@ -12,6 +12,10 @@ server.listen(port, function() {
 });
 // Request handler
 function handleRequest(req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write('<html><head><title>Comments</title></head><body><h1>Welcome to the comments page!</h1></body></html>');
+  res.end();
+}
     var urlData = url.parse(req.url, true);
     if (urlData.pathname === '/') {
         fs.readFile('index.html', 'utf8', function(err, data) {
@@ -75,17 +79,14 @@ function handleRequest(req, res) {
         res.writeHead(404);
         res.end('404 File Not Found');
     }
-}
 // Path: comments.json
 [
-    "First comment",
-    "Second comment"
+    "This is the first comment",
+    "This is the second comment",
+    "This is the third comment"
 ]
-// Path: index.html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Comments</
+Path: index.html
+// Path: server.js
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
