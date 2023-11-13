@@ -1,3 +1,16 @@
-function calculateNumbers (var1, var2) {
-    console.log (var1 + var2);
+function calculateNumbers(params) {
+    if (params.operator == "+") {
+        return params.firstNumber + params.secondNumber;
+    } else if (params.operator == "-") {
+        return params.firstNumber - params.secondNumber;
+    } else if (params.operator == "*") {
+        return params.firstNumber * params.secondNumber;
+    } else if (params.operator == "/") {
+        return params.firstNumber / params.secondNumber;
+    } else {
+        return "Error";
+    }
+}
+    function calculateNumbers
+    }
 }
