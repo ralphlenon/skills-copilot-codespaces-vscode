@@ -79,11 +79,6 @@ function handleRequest(req, res) {
         res.writeHead(404);
         res.end('404 File Not Found');
     }
-// Path: comments.json
-[
-    "This is the first comment",
-    "This is the second comment",
-    "This is the third comment"
-]
+Path: comments.json
 Path: index.html
 Path: server.js
