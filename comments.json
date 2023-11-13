@@ -1,0 +1,19 @@
+{
+    "comments": [
+        {
+            "id": 1,
+            "text": "Great job on this code!",
+            "author": "John"
+        },
+        {
+            "id": 2,
+            "text": "I think this could be improved by using a for loop instead of a while loop.",
+            "author": "Jane"
+        },
+        {
+            "id": 3,
+            "text": "Have you considered using a switch statement instead of multiple if statements?",
+            "author": "Bob"
+        }
+    ]
+}
